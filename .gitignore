@@ -1,21 +1,54 @@
-.gradle
-**/build/
-!**/src/**/build/
+### Project specific ###
+HELP.md
+build/
+!**/src/main/**
+!**/src/test/**
 
-# Ignore Gradle GUI config
-gradle-app.setting
+### JUnit 5 / Test reports ###
+test-output/
+*-reports/
+test-results/
+**/build/test-results/
+**/build/reports/tests/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+
+### Gradle ###
+.gradle/
+**/gradle-app.setting
 !gradle-wrapper.jar
+gradle-wrapper.jar
+gradle-wrapper.properties
+**/build/
 
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+### Logs ###
+logs/
+*.log
+*.tmp
+*.pid
 
-# Cache of project
-.gradletasknamecache
+### OS generated files ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+### Editor directories and files ###
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
