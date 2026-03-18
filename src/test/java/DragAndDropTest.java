@@ -36,6 +36,11 @@ public class DragAndDropTest {
         SelenideElement columnA = $("#column-a");
         SelenideElement columnB = $("#column-b");
 
+        //Проверяем что элементы на своих местах
+        $("#column-a header").shouldHave(text("A"));
+        $("#column-b header").shouldHave(text("B"));
+
+
         //drag and drop
         columnA.dragAndDrop(DragAndDropOptions.to(columnB));
 
